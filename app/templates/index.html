@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block head %}
+{% endblock %}
+{% block header %}
+<h1 class="text-center">Pan Tadeusz, czyli ostatni zajazd na Litwie: historia szlachecka z roku 1811 i 1812 we dwunastu księgach wierszem.</h1>
+<h2 class="text-end">Adam Mickiewicz</h2>
+{% endblock %}
+{% block contents %}
+<a class="list-group-item list-group-item-secondary"><i class="bi bi-list-columns"></i> Spis treści</a>
+<a href="#" onclick="document.getElementById('frame').src = '{{ url_for('static', filename='img/PanTadeusz_img.jpg') }}';document.getElementById('frame').scrolling = 'no'" class="list-group-item list-group-item-action"><i class="bi bi-house-fill"></i> Strona główna</a>
+<a href="#" onclick="document.getElementById('frame').src = '{{ url_for('static', filename='books/k1.html') }}';document.getElementById('frame').scrolling = 'yes'" class="list-group-item list-group-item-action"><i class="bi bi-bookmark-fill"></i> Księga 1</a>
+<a href="#" onclick="document.getElementById('frame').src = '{{ url_for('static', filename='books/k2.html') }}';document.getElementById('frame').scrolling = 'yes'" class="list-group-item list-group-item-action"><i class="bi bi-bookmark-fill"></i> Księga 2</a>
+<a href="#" onclick="document.getElementById('frame').src = '{{ url_for('static', filename='books/k3.html') }}';document.getElementById('frame').scrolling = 'yes'" class="list-group-item list-group-item-action"><i class="bi bi-bookmark-fill"></i> Księga 3</a>
+<a href="#" onclick="document.getElementById('frame').src = '{{ url_for('static', filename='books/k4.html') }}';document.getElementById('frame').scrolling = 'yes'" class="list-group-item list-group-item-action"><i class="bi bi-bookmark-fill"></i> Księga 4</a>
+<a href="#" onclick="document.getElementById('frame').src = '{{ url_for('static', filename='books/k5.html') }}';document.getElementById('frame').scrolling = 'yes'" class="list-group-item list-group-item-action"><i class="bi bi-bookmark-fill"></i>  Księga 5</a>
+<a href="#" onclick="document.getElementById('frame').src = '{{ url_for('static', filename='books/k6.html') }}';document.getElementById('frame').scrolling = 'yes'" class="list-group-item list-group-item-action"><i class="bi bi-bookmark-fill"></i> Księga 6</a>
+<a href="#" onclick="document.getElementById('frame').src = '{{ url_for('static', filename='books/k7.html') }}';document.getElementById('frame').scrolling = 'yes'" class="list-group-item list-group-item-action"><i class="bi bi-bookmark-fill"></i> Księga 7</a>
+<a href="#" onclick="document.getElementById('frame').src = '{{ url_for('static', filename='books/k8.html') }}';document.getElementById('frame').scrolling = 'yes'" class="list-group-item list-group-item-action"><i class="bi bi-bookmark-fill"></i> Księga 8</a>
+<a href="#" onclick="document.getElementById('frame').src = '{{ url_for('static', filename='books/k9.html') }}';document.getElementById('frame').scrolling = 'yes'" class="list-group-item list-group-item-action"><i class="bi bi-bookmark-fill"></i> Księga 9</a>
+<a href="#" onclick="document.getElementById('frame').src = '{{ url_for('static', filename='books/k10.html') }}';document.getElementById('frame').scrolling = 'yes'" class="list-group-item list-group-item-action"><i class="bi bi-bookmark-fill"></i> Księga 10</a>
+<a href="#" onclick="document.getElementById('frame').src = '{{ url_for('static', filename='books/k11.html') }}';document.getElementById('frame').scrolling = 'yes'" class="list-group-item list-group-item-action"><i class="bi bi-bookmark-fill"></i> Księga 11</a>
+<a href="#" onclick="document.getElementById('frame').src = '{{ url_for('static', filename='books/k12.html') }}';document.getElementById('frame').scrolling = 'yes'" class="list-group-item list-group-item-action"><i class="bi bi-bookmark-fill"></i> Księga 12</a>
+{% endblock %}
+
+
+{{url_for('./k1.html')}}
